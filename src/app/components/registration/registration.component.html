@@ -1,0 +1,91 @@
+
+<div class="page-header" filter-color="orange">
+    <div class="page-header-image" style="background-image:url(assets/img/login.jpg)"></div>
+    <div class="container">
+        <div class="col-md-2 content-center">
+            <div class="card card-login card-plain">
+                <form class="form" (ngSubmit)="handlRegisration()" method="post" >
+                    <div class="header header-primary text-center">
+
+                        <img src="assets/img/now-logo.png" alt="" style="height:130px; width: 130px">
+
+                    </div>
+                    <div class="content">
+                        <div class="input-group form-group-no-border input-lg" >
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">  <i class="now-ui-icons users_circle-08"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="First Name" [(ngModel)]="user.prenom"  >
+                        </div>
+                        <div class="input-group form-group-no-border input-lg" >
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">  <i class="now-ui-icons users_circle-08"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Last Name" [(ngModel)]="user.nom"  >
+                        </div>
+                        <div class="input-group form-group-no-border input-lg" >
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">  <i class="now-ui-icons users_circle-08"></i></span>
+                            </div>
+                            <input type="email" class="form-control" placeholder="Email" [(ngModel)]="user.email"  >
+                        </div>
+
+                        <div class="input-group form-group-no-border input-lg" >
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">  <i class="now-ui-icons users_circle-08"></i></span>
+                            </div>
+                            <input type="email" class="form-control" placeholder="username" [(ngModel)]="user.username"  >
+                        </div>
+                        <div class="input-group form-group-no-border input-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
+                            </div>
+                            <input type="password" placeholder="Password" class="form-control" [(ngModel)]="user.password" />
+                        </div>
+
+                        <div class="input-group form-group-no-border input-lg" >
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">  <i class="now-ui-icons users_circle-08"></i></span>
+                            </div>
+                            <input type="email" class="form-control" placeholder="Telephone" [(ngModel)]="user.telephone"  >
+                        </div>
+
+                        <div class="input-group form-group-no-border input-lg" >
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">  <i class="now-ui-icons users_circle-08"></i></span>
+                            </div>
+                            <input type="email" class="form-control" placeholder="CIN" [(ngModel)]="user.CIN"  >
+                        </div>
+
+
+                        <div class="col-sm-6 col-lg-3">
+
+                            <div class="form-check form-check-radio">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="sexe" value="Homme" [(ngModel)]="user.sexe">
+                                    <span class="form-check-sign"></span>
+                                    Homme
+                                </label>
+                            </div>
+                            <div class="form-check form-check-radio">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="sexe"  value="Femme"  [(ngModel)]="user.sexe">
+                                    <span class="form-check-sign"></span>
+                                    Femme
+                                </label>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="footer text-center">
+                        <input  value="Sign Up " class="btn btn-primary btn-round btn-lg btn-block" type="submit" >
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
